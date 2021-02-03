@@ -9,10 +9,11 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background: linear-gradient(to right, #02dfba,#02f2ca);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 10vh;
   min-height: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   position: fixed;
   width: 100%;
   max-width: 728px;
@@ -25,12 +26,16 @@ body {
   box-sizing: border-box;
 }
 
+.App header h1{
+  padding-left: 2vw;
+}
+
 .App section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-color: rgb(255, 255, 255);
 }
 
 main {
@@ -58,16 +63,22 @@ form {
   height: 10vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
   width: 100%;
   max-width: 728px;
   display: flex;
   font-size: 1.5rem;
+  
+}
+form input {
+  background-color: #E5E5EA;
+  color: #000000;
 }
 
+
+
 form button {
-  width: 20%;
-  background-color: rgb(56, 56, 143);
+  width: 20%; 
+  background: linear-gradient(to right, #02dfba,#02f2ca)
 }
 
 
@@ -83,9 +94,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -95,17 +104,36 @@ button {
 }
 
 button:disabled {
-  opacity: 0.5;
   cursor: not-allowed;
+  color: white;
 }
 
+/*Sign in message*/
+.signInText {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
 
 .sign-in {
-  color: #282c34;
-  background: white;
+  color: #000000;
+  background: linear-gradient(to right, #02dfba,#02f2ca);
   max-width: 400px;
   margin: 0 auto;
 }
+
+.violateMessage {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sign-out {
+  background: none;
+  color: white;
+}
+
 
 
 
@@ -137,13 +165,13 @@ p {
 }
 
 .sent p {
-  color: white;
-  background: #0b93f6;
+  color: black;
+  background: #02f2ca;
   align-self: flex-end;
 }
 .received p {
-  background: #e5e5ea;
-  color: black;
+  background: #02dfba;
+  color: white;
 }
 
 img {
@@ -152,3 +180,6 @@ img {
   border-radius: 50%;
   margin: 2px 5px;
 }
+
+
+
